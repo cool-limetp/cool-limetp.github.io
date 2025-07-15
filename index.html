@@ -31,6 +31,8 @@
             transition: background-color 0.5s ease-in-out, transform 0.2s ease;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Hafif gölge */
             animation: colorChange 4s infinite alternate; /* Renk değiştirme animasyonu */
+            text-decoration: none; /* Link olarak görünmemesi için */
+            display: inline-block; /* Padding ve margin için */
         }
 
         .touch-button:hover {
@@ -54,7 +56,7 @@
     <script>
         function openYouTube() {
             // Buraya açılmasını istediğin YouTube videosunun linkini yapıştır.
-            // Örneğin: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' (Rick Astley - Never Gonna Give You Up)
+            // Kullanıcının belirttiği URL: https://m.youtube.com/watch?v=dQw4w9WgXcQ&pp=0gcJCfwAo7VqN5tD
             window.open('https://m.youtube.com/watch?v=dQw4w9WgXcQ&pp=0gcJCfwAo7VqN5tD', '_blank');
         }
     </script>
