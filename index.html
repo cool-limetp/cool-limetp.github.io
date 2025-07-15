@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bana Dokun!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Açık gri arka plan */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* Taşmayı engeller */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .touch-button {
+            padding: 20px 40px;
+            font-size: 2.5em; /* Daha büyük font boyutu */
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 15px; /* Daha yuvarlak köşeler */
+            cursor: pointer;
+            transition: background-color 0.5s ease-in-out, transform 0.2s ease;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+            animation: colorChange 4s infinite alternate; /* Renk değiştirme animasyonu */
+        }
+
+        .touch-button:hover {
+            transform: scale(1.05); /* Üzerine gelince biraz büyüsün */
+        }
+
+        @keyframes colorChange {
+            0% { background-color: #FF5733; } /* Kırmızımsı turuncu */
+            25% { background-color: #33FF57; } /* Yeşil */
+            50% { background-color: #3357FF; } /* Mavi */
+            75% { background-color: #FF33F5; } /* Mor */
+            100% { background-color: #FFBD33; } /* Altın sarısı */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="touch-button" onclick="openYouTube()">Bana Dokun</button>
+    </div>
+
+    <script>
+        function openYouTube() {
+            // Buraya açılmasını istediğin YouTube videosunun linkini yapıştır.
+            // Örneğin: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' (Rick Astley - Never Gonna Give You Up)
+            window.open('https://m.youtube.com/watch?v=dQw4w9WgXcQ&pp=0gcJCfwAo7VqN5tD', '_blank');
+        }
+    </script>
+</body>
+</html>
