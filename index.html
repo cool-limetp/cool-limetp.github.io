@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bana Dokun!</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0; /* Açık gri arka plan */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow: hidden; /* Taşmayı engeller */
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bana Dokun!</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
 
-        .container {
-            text-align: center;
-        }
+    .container {
+      text-align: center;
+    }
 
-        .touch-button {
-            padding: 20px 40px;
-            font-size: 2.5em; /* Daha büyük font boyutu */
-            font-weight: bold;
-            color: white;
-            border: none;
-            border-radius: 15px; /* Daha yuvarlak köşeler */
-            cursor: pointer;
-            transition: background-color 0.5s ease-in-out, transform 0.2s ease;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Hafif gölge */
-            animation: colorChange 4s infinite alternate; /* Renk değiştirme animasyonu */
-            text-decoration: none; /* Link olarak görünmemesi için */
-            display: inline-block; /* Padding ve margin için */
-        }
+    .touch-button {
+      padding: 20px 40px;
+      font-size: 2.5em;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.5s ease-in-out, transform 0.2s ease;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      animation: colorChange 4s infinite alternate;
+      text-decoration: none;
+      display: inline-block;
+    }
 
-        .touch-button:hover {
-            transform: scale(1.05); /* Üzerine gelince biraz büyüsün */
-        }
+    .touch-button:hover {
+      transform: scale(1.05);
+    }
 
-        @keyframes colorChange {
-            0% { background-color: #FF5733; } /* Kırmızımsı turuncu */
-            25% { background-color: #33FF57; } /* Yeşil */
-            50% { background-color: #3357FF; } /* Mavi */
-            75% { background-color: #FF33F5; } /* Mor */
-            100% { background-color: #FFBD33; } /* Altın sarısı */
-        }
-    </style>
+    @keyframes colorChange {
+      0% { background-color: #FF5733; }
+      25% { background-color: #33FF57; }
+      50% { background-color: #3357FF; }
+      75% { background-color: #FF33F5; }
+      100% { background-color: #FFBD33; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <button class="touch-button" onclick="openYouTube()">Bana Dokun</button>
-    </div>
-
-    <script>
-        function openYouTube() {
-            // Buraya açılmasını istediğin YouTube videosunun linkini yapıştır.
-            // Kullanıcının belirttiği URL: https://m.youtube.com/watch?v=dQw4w9WgXcQ&pp=0gcJCfwAo7VqN5tD
-            window.open('https://m.youtube.com/watch?v=dQw4w9WgXcQ&pp=0gcJCfwAo7VqN5tD', '_blank');
-        }
-    </script>
+  <div class="container">
+    <a
+      class="touch-button"
+      href="https://m.youtube.com/watch?v=dQw4w9WgXcQ"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Bana Dokun
+    </a>
+  </div>
 </body>
 </html>
